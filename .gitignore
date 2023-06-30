@@ -1,3 +1,6 @@
+#osx
+DS_*
+ds_*
 # Logs
 logs
 *.log
