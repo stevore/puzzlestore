@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const Category = require('./category');
+const Category = require('./Category');
+const Product = require('./Product');
 
 const { Schema } = mongoose;
 
@@ -10,10 +11,10 @@ const StoreSpecialSchema = new Schema({
     trim: true
   },
   product:{
-    type:[Product]
+    type:[String]
   },
   category: {
-    type:[Category]
+    type:[String]
   },
   salediscount: {
     type:Number
@@ -29,6 +30,6 @@ const StoreSpecialSchema = new Schema({
   }
 });
 
-const StoreSpecial = mongoose.model('StoreSpecial', storespecialSchema);
+const StoreSpecial = mongoose.model('StoreSpecial', StoreSpecialSchema);
 
 module.exports = StoreSpecial;
