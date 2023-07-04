@@ -5,5 +5,7 @@ const Blog = require('./Blog');
 const ProductReview = require('./ProductReview');
 const  StoreEvent= require('./StoreEvent');
 const  StoreSpecial= require('./StoreSpecial');
-const  Blog = require('./Blog');
 const  Cart = require('./Cart');
+
+module.exports={ User,Product,Category,Blog,ProductReview,
+StoreEvent,StoreSpecial,Cart}

@@ -29,6 +29,7 @@ const productSchema = new Schema({
     ref: 'Category',
     required: true
   }
+
 });
 
 const Product = mongoose.model('Product', productSchema);
