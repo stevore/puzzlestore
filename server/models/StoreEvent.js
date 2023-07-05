@@ -7,8 +7,18 @@ const storeeventSchema = new Schema({
     type: String,
     required: true,
     trim: true
+  },
+  description: {
+    type: String
+  },
+  startdate:{
+    type:Date 
+  },
+  enddate:{
+    type:Date
   }
-});
+  
+},{ timestamps: true});
 
 const StoreEvent = mongoose.model('StoreEvent', storeeventSchema);
 

@@ -13,13 +13,12 @@ const blogSchema = new Schema({
     required: true,
     trim: true
   },
-  user : {
-    type:String,
-    required: true,
-    trim: true
-  }
-
-});
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+},{ timestamps: true});
 
 const Blog = mongoose.model('Blog', blogSchema);
 
