@@ -41,6 +41,7 @@ const storeinfoSchema = new Schema({
   },
 },{ timestamps: true});
 
+
 const StoreInfo = mongoose.model('StoreInfo', storeinfoSchema);
 
 module.exports = StoreInfo;
