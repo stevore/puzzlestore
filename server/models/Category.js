@@ -6,13 +6,8 @@ const categorySchema = new Schema({
     required: true,
     trim: true,
   },
-},
-{
-  toJSON: {
-      virtuals:true,
-  },
-  id:false,
-},
+}
+,{ timestamps: true}
 );
 
 const Category = model('Category', categorySchema);

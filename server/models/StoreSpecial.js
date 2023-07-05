@@ -10,6 +10,9 @@ const StoreSpecialSchema = new Schema({
     required: true,
     trim: true
   },
+  description: {
+    type: String
+  },
   product:{
     type:[String]
   },
@@ -28,7 +31,7 @@ const StoreSpecialSchema = new Schema({
   enddate:{
     type:Date
   }
-});
+},{ timestamps: true});
 
 const StoreSpecial = mongoose.model('StoreSpecial', StoreSpecialSchema);
 

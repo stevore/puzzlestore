@@ -8,6 +8,10 @@ const productSchema = new Schema({
     required: true,
     trim: true
   },
+  UPC: {
+    type: String,
+    required: true,
+  },
   description: {
     type: String
   },
@@ -28,9 +32,11 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
-  }
+  },
+  
 
-});
+},
+{ timestamps: true});
 
 const Product = mongoose.model('Product', productSchema);
 
