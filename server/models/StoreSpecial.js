@@ -14,10 +14,10 @@ const StoreSpecialSchema = new Schema({
     type: String
   },
   product:{
-    type:[String]
+    type:String
   },
   category: {
-    type:[String]
+    type:String
   },
   salediscount: {
     type:Number
@@ -26,10 +26,10 @@ const StoreSpecialSchema = new Schema({
     type: Number
   },
   startdate:{
-    type:Date 
+    type:String 
   },
   enddate:{
-    type:Date
+    type:String
   }
 },{ timestamps: true});
 
