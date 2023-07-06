@@ -12,10 +12,10 @@ const storeeventSchema = new Schema({
     type: String
   },
   startdate:{
-    type:Date 
+    type:String 
   },
   enddate:{
-    type:Date
+    type:String
   }
   
 },{ timestamps: true});

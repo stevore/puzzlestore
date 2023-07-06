@@ -11,7 +11,6 @@ const storeinfoSchema = new Schema({
   description: {
     type: String
   },
-  address: {
     street:{
       type:String,
       required: true,
@@ -32,7 +31,7 @@ const storeinfoSchema = new Schema({
       required: true,
       trim: true
     },
-  },
+  
   phone: {
     type: String
   },
