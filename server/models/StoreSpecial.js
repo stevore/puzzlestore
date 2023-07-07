@@ -7,8 +7,8 @@ const { Schema } = mongoose;
 const StoreSpecialSchema = new Schema({
   name: {
     type: String,
-    required: true,
-    trim: true
+   //required: true,
+  // trim: true
   },
   description: {
     type: String
@@ -31,7 +31,8 @@ const StoreSpecialSchema = new Schema({
   enddate:{
     type:String
   }
-},{ timestamps: true});
+//},{ timestamps: true
+});
 
 const StoreSpecial = mongoose.model('StoreSpecial', StoreSpecialSchema);
 

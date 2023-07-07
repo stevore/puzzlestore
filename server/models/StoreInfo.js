@@ -5,8 +5,8 @@ const { Schema } = mongoose;
 const storeinfoSchema = new Schema({
   name: {
     type: String,
-    required: true,
-    trim: true
+   // required: true,
+   // trim: true
   },
   description: {
     type: String
@@ -38,7 +38,8 @@ const storeinfoSchema = new Schema({
   email: {
     type: String
   },
-},{ timestamps: true});
+//},{ timestamps: true
+});
 
 
 const StoreInfo = mongoose.model('StoreInfo', storeinfoSchema);

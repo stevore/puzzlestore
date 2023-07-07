@@ -5,23 +5,24 @@ const { Schema } = mongoose;
 const productreviewSchema = new Schema({
   name: {
     type: String,
-    required: true,
-    trim: true
+ //   required: true,
+ //   trim: true
+   },
+   review: {
+     type: String
   },
-  review: {
-    type: String
-  },
-  rating: {
+   rating: {
     type: Number,
   },
-  product: {
-    type: Schema.Types.ObjectId,
-    ref: 'Product',
-    required: true
-  },
+   product: {
+     type: Schema.Types.ObjectId,
+     ref: 'Product',
+     required: true
+   }
 
 }
-,{ timestamps: true});
+//,{ timestamps: true
+);
 
 const ProductReview = mongoose.model('ProductReview', productreviewSchema);
 
