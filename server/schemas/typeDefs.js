@@ -5,6 +5,8 @@ const typeDefs = gql`
      _id: ID
     firstName:String
     lastName:String
+    email:String
+    password:String
   }
 
   type Category {
@@ -71,15 +73,15 @@ type ProductReview {
   }
 
   type Query {
-    blog:Blog
-    cart:Cart
-    category:Category
+    blog:[Blog]
+    cart:[Cart]
+    category:[Category]
     product:[Product]
-    productreview:ProductReview
-    storeevent:StoreEvent
-    storeinfo:StoreInfo
-    storespecial:StoreSpecial
-    user:User
+    productreview:[ProductReview]
+    storeevent:[StoreEvent]
+    storeinfo:[StoreInfo]
+    storespecial:[StoreSpecial]
+    user:[User]
   }
 `;
 
