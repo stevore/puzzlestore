@@ -2,7 +2,9 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
   type User {
-    name:String
+     _id: ID
+    firstName:String
+    lastName:String
   }
 
   type Category {
@@ -11,22 +13,22 @@ const typeDefs = gql`
   }
 
   type Product {
-    _id: ID
-    name: String
-    UPC: String
-    description:String
-    image:String
-    quantity: Int
-    price:Float
-    category: Category
-  }
+  _id: ID
+  name: String
+  UPC: String
+  description:String
+  image:String
+  quantity: Int
+  price:Float
+  category:Category
+}
 
-  type ProductReview {
-    _id: ID
-    name: String
-    review: String
-    rating: Int
-  }
+type ProductReview {
+  _id: ID
+  name: String
+  review: String
+  rating: Int
+}
 
   type Blog {
     _id: ID
@@ -72,7 +74,7 @@ const typeDefs = gql`
     blog:Blog
     cart:Cart
     category:Category
-    product:Product
+    product:[Product]
     productreview:ProductReview
     storeevent:StoreEvent
     storeinfo:StoreInfo

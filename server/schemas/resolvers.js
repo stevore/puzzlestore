@@ -8,7 +8,7 @@ const resolvers = {
     },
     user: async () => {
       return await User.find({});
-    },
+    }, 
     product: async () => {
       return await Product.find({});
     },
@@ -34,3 +34,20 @@ const resolvers = {
 };
 
 module.exports = resolvers;
+
+
+// activity 1
+// const { Product,Category } = require('../models');
+
+// const resolvers = {
+//   Query: {
+//     products: async () => {
+//       return await Product.find({});
+//     },
+//     categorys: async () => {
+//          return await Category.find({});
+//    },
+//   }
+// };
+
+//module.exports = resolvers;
