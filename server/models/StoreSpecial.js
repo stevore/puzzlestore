@@ -7,14 +7,17 @@ const { Schema } = mongoose;
 const StoreSpecialSchema = new Schema({
   name: {
     type: String,
-    required: true,
-    trim: true
+   //required: true,
+  // trim: true
+  },
+  description: {
+    type: String
   },
   product:{
-    type:[String]
+    type:String
   },
   category: {
-    type:[String]
+    type:String
   },
   salediscount: {
     type:Number
@@ -23,11 +26,12 @@ const StoreSpecialSchema = new Schema({
     type: Number
   },
   startdate:{
-    type:Date 
+    type:String 
   },
   enddate:{
-    type:Date
+    type:String
   }
+//},{ timestamps: true
 });
 
 const StoreSpecial = mongoose.model('StoreSpecial', StoreSpecialSchema);
