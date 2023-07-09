@@ -76,8 +76,9 @@ type ProductReview {
   type Query {
     blog:[Blog]
     cart:[Cart]
-    category:[Category]
-    product:[Product]
+    categorys:[Category]!
+    category(categoryId: ID!):Category
+    product:[Product]!
     productreview:[ProductReview]
     storeevent:[StoreEvent]
     storeinfo:[StoreInfo]
