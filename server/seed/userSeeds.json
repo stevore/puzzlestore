@@ -1,0 +1,51 @@
+[
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "userName": "tech_wizard",
+      "github": "tech_wizard",
+      "email": "tech_wizard@gmail.com",
+      "password": "Tech@123"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "userName": "coding_genius",
+      "github": "coding_genius",
+      "email": "coding_genius@gmail.com",
+      "password": "CodeMaster@456"
+    },
+    {
+      "firstName": "David",
+      "lastName": "Johnson",
+      "userName": "innovator_21",
+      "github": "innovator_21",
+      "email": "innovator_21@gmail.com",
+      "password": "Innovation@789"
+    },
+    {
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "userName": "cyber_ninja",
+      "github": "cyber_ninja",
+      "email": "cyber_ninja@gmail.com",
+      "password": "NinjaWarrior@123"
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Wilson",
+      "userName": "tech_guru",
+      "github": "tech_guru",
+      "email": "tech_guru@gmail.com",
+      "password": "Guru@2023"
+    },
+    {
+      "firstName": "Sophia",
+      "lastName": "Miller",
+      "userName": "code_maverick",
+      "github": "code_maverick",
+      "email": "code_maverick@gmail.com",
+      "password": "Maverick@2023"
+    }
+  ]
+  
