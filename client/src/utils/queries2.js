@@ -9,4 +9,14 @@ export const QUERY_CATEGORYS = gql`
     }
   }
 `;
+
+export const QUERY_PRODUCTS = gql`
+  query getProducts {
+    products {
+      _id
+      name
+    
+    }
+  }
+`;
   
