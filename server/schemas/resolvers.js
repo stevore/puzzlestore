@@ -5,15 +5,18 @@ const { signToken } = require('../middleware/auth');
 
 const resolvers = {
   Query: {
-    category: async () => {
+    categorys: async () => {
+      console.log("run categorys");
       return await Category.find({});
+    },
+    category: async (parent, {categoryId}) => {
+      console.log("run one category");
+      return await Category.findOne({_id:categoryId});
     },
     user: async () => {
       return await User.find({});
     }, 
-    product: async () => {
-      return await Product.find({});
-    },
+
     productreview: async () => {
       return await ProductReview.find({});
     },
