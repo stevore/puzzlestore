@@ -84,6 +84,16 @@ type ProductReview {
     storespecial:[StoreSpecial]
     user:[User]
   }
+
+  type Mutation{
+    addProfile(firstName: String!, lastName: String!, userName: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+  }
+
+  type Auth {
+    token: ID!
+    profile: User
+  }
 `;
 
 module.exports = typeDefs;
