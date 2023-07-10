@@ -48,6 +48,9 @@ Mutation: {
         throw new AuthenticationError('No user with this email found!');
       }
 
+
+
+      
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
