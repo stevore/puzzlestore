@@ -1,6 +1,6 @@
 const { User,Product,Category,Blog,ProductReview,
   StoreEvent,StoreSpecial,StoreInfo,Cart } = require('../models');
-const { AuthenticationError } = require('apollo-server-express');
+  const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../middleware/auth');
 
 const resolvers = {
