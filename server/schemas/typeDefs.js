@@ -93,7 +93,7 @@ type ProductReview {
 
   type Auth {
     token: ID!
-    profile: User
+    user: User
   }
 `;
 
