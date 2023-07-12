@@ -1,17 +1,52 @@
 [
     {
-        "name": "Cars"
+        "name": "Cars",
+        "image":"Cars",
+        "productCount":"4"
     },    
     {
-        "name": "Dinosaurs"
+        "name": "Dinosaurs",
+        "image":"Dinosaurs",
+        "productCount":"4"
     },
     {
-        "name": "Flowers"
+        "name": "Flowers",
+        "image":"Flowers",
+        "productCount":"5"
     },
     {
-        "name": "Anime"
+        "name": "Anime",
+        "image":"Anime",
+        "productCount":"4"
     },
     {
-        "name": "Constellations"
+        "name": "Constellations",
+        "image":"Constellations",
+        "productCount":"6"
+    },
+    {
+        "name":"Boats",
+        "image":"Boats",
+        "productCount":"6"
+    },
+    {
+        "name":"Buildings",
+        "image":"Buildings",
+        "productCount":"4"
+    },
+    {
+        "name":"Animals",
+        "image":"Animals",
+        "productCount":"4"
+    },
+    {
+        "name":"Nature",
+        "image":"Nature",
+        "productCount":"4"
+    },
+    {
+        "name":"People",
+        "image":"People",
+        "productCount":"4"
     }
 ]

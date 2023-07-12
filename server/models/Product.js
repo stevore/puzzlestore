@@ -5,17 +5,21 @@ const { Schema, model } = require('mongoose');
 const productSchema = new Schema({
   name: {
     type: String,
-    //required: true,
-   // trim: true
+    required: true,
+    trim: true
   },
   UPC: {
     type: String,
-//   //  required: true,
+    trim: true
    },
    description: {
-    type: String   },
+    type: String,
+    required: true,
+    trim: true
+  },
    image: {
-     type: String
+     type: String,
+    trim: true
    },
    price: {
      type: Number,
@@ -24,14 +28,13 @@ const productSchema = new Schema({
   },
    quantity: {
      type: Number,
-//  //   min: 0,
-//  //   default: 0
+     min: 0,
+     default: 0
    },
-   category: {
-      type: Schema.Types.ObjectId,
-      ref: 'Category'
-   
-    }
+   category:{
+    type: Schema.Types.ObjectId,
+    ref: 'Category'
+   }
   })  
 
 

@@ -13,6 +13,7 @@ const typeDefs = gql`
   type Category {
     _id: ID
     name: String
+    image: String
   }
 
   type Product {
@@ -76,13 +77,25 @@ type ProductReview {
   type Query {
     blog:[Blog]
     cart:[Cart]
-    category:[Category]
-    product:[Product]
+    categorys:[Category]!
+    category(categoryId: ID!):Category
+    products:[Product]!
+    product(productId: ID!):Product
     productreview:[ProductReview]
     storeevent:[StoreEvent]
     storeinfo:[StoreInfo]
     storespecial:[StoreSpecial]
     user:[User]
+  }
+
+  type Mutation{
+    addProfile(firstName: String!, lastName: String!, userName: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+  }
+
+  type Auth {
+    token: ID!
+    user: User
   }
 `;
 
