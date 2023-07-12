@@ -91,7 +91,7 @@ type ProductReview {
     category(categoryId: ID!):Category
     products:[Product]!
     product(productId: ID!):Product
-    productscategory(categoryId: ID!):[Product]
+    productscategory(categoryId: ID!):[Product]!
     productreview:[ProductReview]
     storeevent:[StoreEvent]
     storeinfo:[StoreInfo]

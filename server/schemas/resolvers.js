@@ -21,7 +21,8 @@ const resolvers = {
     },
     productscategory: async (parent, {categoryId}) => {
       console.log("run products in a category: "+categoryId);
-      return await Product.find({category:categoryId});
+      return await Product.find({});
+     //return await Product.find({category:categoryId});
     },
     user: async () => {
       return await User.find({});
