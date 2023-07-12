@@ -11,11 +11,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home2 from './pages/Home2';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+
 import Categories from './pages/categories';
 import ProductsPage from './pages/productspage';
 import Profile from './pages/Profile';
 import Header from './components/Header2';
 import Footer from './components/Footer2';
+
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -61,13 +63,14 @@ function App() {
                 path="/signup" 
                 element={<Signup />}
               />
-              <Route 
+              {/* <Route 
                 path="/me" 
                 element={<Profile />}
               />
               <Route 
                 path="/profiles/:username" 
                 element={<Profile />}
+
               />
               <Route 
                 path="/categories" 
@@ -77,6 +80,8 @@ function App() {
                 path="/products" 
                 element={<ProductsPage />}
               />
+
+ 
             </Routes>
           </div>
           <Footer />
