@@ -15,8 +15,8 @@ import Login from './pages/Login';
 import Categories from './pages/categories';
 import ProductsPage from './pages/productspage';
 import Profile from './pages/Profile';
-import Header from './components/Header2';
-import Footer from './components/Footer2';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 // Construct our main GraphQL API endpoint
