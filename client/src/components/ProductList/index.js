@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import buildings1 from "./../../assets/images/puzzles/buildings/puzzle11.48.50 AM.png";
  import buildings2 from "./../../assets/images/puzzles/buildings/puzzle11.52.45 AM.png";
  import buildings3 from "./../../assets/images/puzzles/buildings/puzzle11.51.52 AM.png";
@@ -170,18 +170,19 @@ const getURL=(name) =>{
   }
   }
   return (
-    <div>
-      <h3>{name}</h3>
+    <div className="container-fluid">
       {products &&
         products.map((product) => (
-          <div key={product._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
-              {product.name} <br />
-            </h4>
-            <div className="card-body bg-light p-2">
-              <p>{product.name}</p>
+      
+          <div key={product._id} className="puzzleCard">
+            <div className="puzzleCard-header">
+             <p>{product.name} </p> 
             </div>
-            <img src={getURL(product.name)} alt="Category"></img>
+            <div className="puzzleCard-body category-img">
+            <img src={getURL(product.name)} alt="img-fluid puzzleCard-img"></img>
+          </div>
+          <div className="puzzleCard-footer">
+          </div>
           </div>
         ))}
     </div>

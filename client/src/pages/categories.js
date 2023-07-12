@@ -10,8 +10,8 @@ const Categories = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
-        <div className="col-12 col-md-10 my-3">
+      <div className="container-fluid w-100">
+        
           {loading ? (
             <div>Loading...</div>
           ) : (
@@ -20,7 +20,7 @@ const Categories = () => {
               title="Puzzle Category"
             />
           )}
-        </div>
+     
       </div>
     </main>
   );
