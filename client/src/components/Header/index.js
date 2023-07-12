@@ -14,7 +14,7 @@ const Header = () => {
     <header className="container-fluid w-100 bg-primary text-light">
       <div className="flex-row justify-space-between-lg justify-center align-center">
         <div>
-          <Link className="" to={`/home`}>
+          <Link className="" to={`/`}>
             <img src={hamburger} alt="Menu" />
           </Link>
           </div>

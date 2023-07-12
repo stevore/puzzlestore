@@ -49,23 +49,27 @@ const CategoryList = ({ categorys, name }) => {
   }
  }
   return (
-    <div className="container-fluid">
+    <div>
+    <h2>Select a puzzle category</h2>
+    <div className="container-fluid  flex-row">
+
 {categorys &&
   categorys.map((category) => (
     <Link className="" to={`/products`}>
    
-    <div key={category._id} className="puzzleCard">
+    <div key={category._id} className="puzzlecard flex-column">
       <div className="puzzleCard-header">
       <p>{category.name}</p>
       </div>
       <div className="puzzleCard-body category-img" >
-       <img src={getURL(category.image)} alt="Category" className="img-fluid puzzleCard-img"></img>   
+       <img src={getURL(category.image)} alt="Category" className={category.name}></img>   
       </div>
       <div className="puzzleCard-footer">
       </div>
       </div>
       </Link>
   ))}
+  </div>
   </div>
  
   );

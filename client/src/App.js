@@ -77,7 +77,7 @@ function App() {
                 element={<Categories />}
               />
               <Route 
-                path="/products" 
+                path="/products/:categoryId" 
                 element={<ProductsPage />}
               />
 

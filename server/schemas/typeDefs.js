@@ -26,6 +26,16 @@ const typeDefs = gql`
   price:Float
   category:Category
 }
+type Productscategory {
+  _id: ID
+  name: String
+  UPC: String
+  description:String
+  image:String
+  quantity: Int
+  price:Float
+  category:Category
+}
 
 type ProductReview {
   _id: ID
@@ -81,6 +91,7 @@ type ProductReview {
     category(categoryId: ID!):Category
     products:[Product]!
     product(productId: ID!):Product
+    productscategory(categoryId: ID!):[Product]
     productreview:[ProductReview]
     storeevent:[StoreEvent]
     storeinfo:[StoreInfo]
