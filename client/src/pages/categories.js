@@ -17,7 +17,7 @@ const Categories = () => {
           ) : (
             <CategoryList
               categorys={categorys}
-              title="Here's the current roster of friends..."
+              title="Puzzle Category"
             />
           )}
         </div>

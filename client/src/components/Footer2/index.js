@@ -7,14 +7,14 @@ import logoThreads from './../../assets/images/threads.png';
 const Footer2 = () => {
 
 return (
-    <footer>
-      <div >
-          <h3>
+    <footer className="footer">
+      <div className="row" >
+          <h3 className="col">
             About Us
             Contact Us
             Shipping Info
           </h3>
-          <span id="social">
+          <span id="social" className="col">
             <img src={logoFacebook} alt="Facebook" />
             <img src={logoInstagram} alt="Instagram" />
             <img src={logoPinterest} alt="Pinterest" />
