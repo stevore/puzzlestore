@@ -13,6 +13,7 @@ const typeDefs = gql`
   type Category {
     _id: ID
     name: String
+    image: String
   }
 
   type Product {
@@ -78,7 +79,8 @@ type ProductReview {
     cart:[Cart]
     categorys:[Category]!
     category(categoryId: ID!):Category
-    product:[Product]!
+    products:[Product]!
+    product(productId: ID!):Product
     productreview:[ProductReview]
     storeevent:[StoreEvent]
     storeinfo:[StoreInfo]

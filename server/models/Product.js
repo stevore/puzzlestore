@@ -27,11 +27,9 @@ const productSchema = new Schema({
 //  //   min: 0,
 //  //   default: 0
    },
-   category: {
-      type: Schema.Types.ObjectId,
-      ref: 'Category'
-   
-    }
+   category:{
+    type:String
+   }
   })  
 
 

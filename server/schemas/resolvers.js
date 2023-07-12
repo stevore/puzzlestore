@@ -13,6 +13,16 @@ const resolvers = {
       console.log("run one category");
       return await Category.findOne({_id:categoryId});
     },
+    products: async () => {
+      console.log("run products");
+      let p=await Product.find({});
+      console.log(p);
+      return p; //await Product.find({});
+    },
+    product: async (parent, {productId}) => {
+      console.log("run one product");
+      return await Product.findOne({_id:productId});
+    },
     user: async () => {
       return await User.find({});
     }, 

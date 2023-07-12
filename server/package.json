@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seed/seed",
-    "watch": "nodemon server.js"
+    "seed2": "node seed/seed2"
+
   },
   "keywords": [],
   "author": "",
