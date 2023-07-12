@@ -67,6 +67,7 @@ const ProductList = ({ products, name }) => {
 }
 
 const getURL=(name) =>{
+  console.log("name: "+name)
   switch(name){
     case "Cars1":
     return(cars1);
@@ -181,6 +182,7 @@ const getURL=(name) =>{
     <div className="container-fluid  flex-row">
     {products &&
         products.map((product) => (
+          
           <Link className="" to={`/cart`}>
           <div key={product._id} className="puzzleCard">
             <div className="puzzleCard-header">

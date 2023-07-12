@@ -55,7 +55,7 @@ const CategoryList = ({ categorys, name }) => {
 
 {categorys &&
   categorys.map((category) => (
-    <Link className="" to={`/products`}>
+    <Link className="" to={`/products:${category._id}`}>
    
     <div key={category._id} className="puzzlecard flex-column">
       <div className="puzzleCard-header">
