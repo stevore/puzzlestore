@@ -1,5 +1,5 @@
 const { User,Product,Category,Blog,ProductReview,
-  StoreEvent,StoreSpecial,StoreInfo,Cart } = require('../models');
+  StoreEvent,StoreSpecial,StoreInfo,Cart,productscategory } = require('../models');
   const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../middleware/auth');
 
@@ -19,9 +19,9 @@ const resolvers = {
       console.log(p);
       return p; //await Product.find({});
     },
-    product: async (parent, {productId}) => {
-      console.log("run one product");
-      return await Product.findOne({_id:productId});
+    productscategory: async (parent, {categoryId}) => {
+      console.log("run products in a category: "+categoryId);
+      return await Product.find({category:categoryId});
     },
     user: async () => {
       return await User.find({});
