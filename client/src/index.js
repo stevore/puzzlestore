@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
-import './puzzlestore.css';
+import './../src/puzzlestore.css';
+
 
 ReactDOM.render(
   <React.StrictMode>

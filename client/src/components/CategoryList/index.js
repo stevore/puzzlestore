@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
   import Dinosaurs from "./../../assets/images/puzzles/dinosaurs/puzzle10.53.56 AM.png";
   import Flowers from "./../../assets/images/puzzles/flowers/puzzle10.41.56 AM.png";
   import Anime from "./../../assets/images/puzzles/anime/puzzle11.43.09 AM.png";
@@ -9,11 +9,10 @@ import React from 'react';
   import Animals from "./../../assets/images/puzzles/animals/puzzle11.54.28 AM.png";
   import Nature from "./../../assets/images/puzzles/nature/puzzle11.57.36 AM.png";
   import People from "./../../assets/images/puzzles/people/puzzle11.59.50 AM.png";
-  import car from "./../../assets/images/puzzles/cars/puzzle9.43.49 AM.png"        
+  import car from "./../../assets/images/puzzles/cars/puzzle9.44.50 AM.png"        
 
 const CategoryList = ({ categorys, name }) => {
   try {
-    console.log(categorys);
     if (!categorys.length) {
       return <h3>Products out of stock.</h3>;
     }
@@ -50,20 +49,22 @@ const CategoryList = ({ categorys, name }) => {
   }
  }
   return (
-    <div className="container">
+    <div className="container-fluid">
 {categorys &&
   categorys.map((category) => (
-    <div key={category._id} className="card">
-      <div className="card-header">
+    <Link className="" to={`/products`}>
+   
+    <div key={category._id} className="puzzleCard">
+      <div className="puzzleCard-header">
       <p>{category.name}</p>
       </div>
-      <div className="card-body">
-       <img src={getURL(category.name)} alt="Category" className="img-fluid"></img>   
+      <div className="puzzleCard-body category-img" >
+       <img src={getURL(category.image)} alt="Category" className="img-fluid puzzleCard-img"></img>   
       </div>
-      <div className="card-footer">
-
+      <div className="puzzleCard-footer">
       </div>
       </div>
+      </Link>
   ))}
   </div>
  

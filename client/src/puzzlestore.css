@@ -6,194 +6,133 @@ Default page styles
 html,
 
 body {
-    font-family: Arial;
+  font-family: Arial;
   margin: 0;
-  padding:0;
-  color:black;
-  background-color:rgb(218 ,233, 211);
-  }
-  html {
-    overflow-x: hidden;
-  }
+  padding: 0;
+  color: black;
+  background-color: white;
+}
 
-  h1 {
+html {
+  overflow-x: hidden;
+}
+
+h1 {
   text-align: center;
   font-weight: bold;
-  }
-  
-  h2 {
+}
+
+h2 {
   text-align: left;
   font-weight: bold;
-  font-size: x-large;
-  }
-  
-  .Orbitron {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: normal;
-  }
-  
-  main {
+
+  font-size: x-lar main ;
     flex: 1;
-    padding:0px;
+    padding: 0px;
   }
 
-
-  
   /**************************************
   Heading styles
   **************************************/
-  
+
   header {
-    background-color:#008000;
-    color:#90ee90;
+    background-color: #008000;
+    color: #90ee90;
 
-    }
-    #banner {
-      align-items:center;
-      }
-    footer {
-        background-color:gold;
-        position:fixed;
-        bottom:0;
-    }
+  }
 
-    #social {
-      text-align:right;
-    }
-    #social img {
-      width:32px;
-      margin-right:10px;
-    }
-    
-    #pageTitle {
+  #banner {
+    align-items: center;
+  }
+
+  footer {
+    background-color: gold;
+    position: fixed;
+    bottom: 0;
+  }
+
+  #social {
+    text-align: right;
+  }
+
+  #social img {
+    width: 32px;
+    margin-right: 10px;
+  }
+
+  #pageTitle {
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
     vertical-align: middle;
-    }
-  
-  /**************************************
-  Nav styles
-  **************************************/
-  
-.navbar {
-  color:rgb(218 ,233, 211);
-  background-color:black; 
   }
-  
-  .nav-link {
-  text-decoration:none;
-  color:rgb(218 ,233, 211);
-  padding-right: 10px;
-  }
-  
-  .nav-link:hover {
-  background-color:rgb(218 ,233, 211);
-  color:black;
-  }
-    
-  .navbar-nav {
-    flex-direction: row;
-    
- /*   justify-content: space-evenly;
-  width: 50%;*/
-  }
-  
-  /**************************************
-  Styles
-  **************************************/
 
-  #blogLogo { 
-    background-color:rgb(218 ,233, 211);
-    color:black;
-    box-shadow: 8px 8px rgba(218 ,233, 211,0.5);
-    width:200px;
+ 
+  
+  /************************ 
+  PuzzleCard 
+  *************************/
+
+  .puzzleCardHidden {
+    display: none;
+  }
+
+  .puzzleCard {
+    background-color: rgb(218, 233, 211);
+    margin:10px;
     padding:2px;
-    border-radius:5px;
-    position:relative;
-    left: 40px;
-    font-family: 'Orbitron', sans-serif;
-    font-size:large;
-    font-weight:bolder;
-    text-align: center;
+    width:50%;
+    border:4px solid darkorchid;
+    /*width:100%*/
+  }
+  .puzzleCard-header {
+    color: black;
+    background-color: lightblue;
+    font-size: large;
+    padding: 5px;
+  }
+
+  .puzzleCard-body {
+    color: black;
+    background-color: rgb(218, 233, 211);
+    font-size: medium;
+    margin:0px;
+    padding:0px;
+    
+    padding: 5px;
+  }
+
+  .clsBlogCardData {
+    position: relative;
+
+  }
+
+  #timestamp {
+    position: relative;
+  }
+
+  ;
+
+  .category-img {
+    border: 10px red solid;
   }
 
   /************************ 
-  Blog Card 
-  *************************/
-
-  .clsCardHidden {
-   display:none;
-  }
-
-  .clsBlogCard {
-    background-color:rgb(218 ,233, 211); 
-    border: 4px solid green;
-    /*width:100%;*/
-    margin:10px;
-  }
-
-  .clsCardHeader {
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    color:rgb(218 ,233, 211);
-    background-color: black;
-    font-size:large;
-
-    padding:5px;
-  }
-    .clsCardContent {
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      color:black;
-      background-color: rgb(218 ,233, 211);
-      font-size:medium;
-     /* width:100%;*/
-      padding:5px;
-  }
-
-  .clsBlogCardData
-  {   position:relative;
-
-  }
-  #timestamp {
-    position: relative;
-  };
-
-/************************ 
   comment Card 
   *************************/
-  .clsCommentCard,
-  .clsNewPostCard {
-    background-color:rgb(218 ,233, 211);
-    border: 2px solid black;
-    margin-left:10px;
-    margin-right:10px;
-    /*width:100%*/
-  }
-  .clsCommentCard.header,
-  .clsNewPostCard.header {
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    color:rgb(218 ,233, 211);
-    background-color: black;
-    font-size:medium;
-    /*width:100%;*/
-        padding:5px;
-  }
 
-  
-   
-
-  
-   
-    
  
 
-  
+  .clsCommentCard.header,
+  .clsNewPostCard.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(218, 233, 211);
+    background-color: black;
+    font-size: medium;
+    /*width:100%;*/
+    padding: 5px;
 
 
-
+  }

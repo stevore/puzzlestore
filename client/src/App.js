@@ -8,7 +8,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home2 from './pages/Home2';
+import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 
@@ -53,7 +53,7 @@ function App() {
             <Routes>
               <Route 
                 path="/"
-                element={<Home2 />}
+                element={<Home />}
               />
               <Route 
                 path="/login" 
